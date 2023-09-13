@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Node.js CRUD API hosted [here](https://hngx-task2-kzd4.onrender.com/) allows you to perform Create, Read, Update, and Delete (CRUD) operations on instances of a "Person". You can create a new person, retrieve person details by `user_id`, update existing person records, and delete person records.
+This Node.js CRUD API hosted [here](https://hngx-task2-kzd4.onrender.com/api/) allows you to perform Create, Read, Update, and Delete (CRUD) operations on instances of a "Person". You can create a new person, retrieve person details by `user_id`, update existing person records, and delete person records.
 
 ## Table of Contents
 
