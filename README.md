@@ -29,13 +29,13 @@ cd hng-task2
 # Install dependencies
 yarn install
 
-# Start
+# Start the server
 yarn start
 
 # Enable live reload by installing nodemon
 yarn add nodemon
 
-# Then start-server
+# Then start the server
 yarn dev
 ```
 
