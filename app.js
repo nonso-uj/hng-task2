@@ -30,7 +30,7 @@ app.get('/', async (req, res) => {
         if(persons.length < 1){
             res.json({"hello": "No Person added yet!"})
         }
-        res.json(persons)
+        res.json({'All people in DB': persons})
     }catch(err){
         res.status(500).json({ message: err.message })
     }
