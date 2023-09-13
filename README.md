@@ -70,7 +70,7 @@ Content-Type: application/json
 
 #### Read a Person (GET /api/:user_id)
 
-To retrieve details of a person, send a GET request with the `user_id` parameter gotten after creating a person:
+To retrieve details of a person, send a GET request with the `user_id` or `name` parameter gotten after creating a person:
 
 ```bash
 GET /api/123
@@ -78,7 +78,7 @@ GET /api/123
 
 #### Update a Person (PATCH /api/:user_id)
 
-To update a person's details, send a PUT request with the `user_id` parameter and a JSON body containing the updated data:
+To update a person's details, send a PUT request with the `user_id` or `name` parameter and a JSON body containing the updated data:
 
 ```json
 PATCH /api/123
@@ -91,7 +91,7 @@ Content-Type: application/json
 
 #### Delete a Person (DELETE /api/:user_id)
 
-To delete a person, send a DELETE request with the `user_id` parameter:
+To delete a person, send a DELETE request with the `user_id` or `name` parameter:
 
 ```bash
 DELETE /api/123
