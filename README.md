@@ -12,8 +12,9 @@ This Node.js CRUD API allows you to perform Create, Read, Update, and Delete (CR
    - [Endpoints](#endpoints)
    - [Request Examples](#request-examples)
 3. [Response Examples](#response-examples)
-4. [Contributing](#contributing)
-5. [License](#license)
+4. [API Testing](#api-testing)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ## Installation
 
@@ -112,6 +113,13 @@ The Delete request returns a json object with a success message confirming the d
     "message": "Person deleted Successfully!"
 }
 ```
+
+
+## API Testing
+You can test the api with postman. The doc is hosted [here](https://documenter.getpostman.com/view/23487620/2s9YC4Ut15). 
+
+## UML Diagrams
+The UML Diagrams describing the api data and workflow can be found in the uml folder.
 
 
 ## Contributing
