@@ -117,3 +117,8 @@ async function getPerson(req, res, next){
     res.person = person
     next()
 }
+
+
+app.use((req, res) => {
+    res.status(404).json('404', { title: 'resource not found' });
+  });
