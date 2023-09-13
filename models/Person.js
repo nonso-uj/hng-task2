@@ -3,6 +3,7 @@ const mongoose = require("mongoose")
 const PersonSchema = new mongoose.Schema({
     name: {
         type: String,
+        index: true,
         required: [true, "Name is Required!"],
         validate: {
             validator: function (p) {

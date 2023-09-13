@@ -2,6 +2,7 @@ const express = require("express")
 require('dotenv').config()
 const mongoose = require("mongoose")
 const Person = require("./models/Person")
+var ObjectId = require('mongoose').Types.ObjectId;
 
 // init express app
 const app = express()
@@ -96,8 +97,14 @@ app.delete('/api/:user_id', getPerson, async (req, res) => {
 
 async function getPerson(req, res, next){
     let person
+    const param = req.params.user_id.trim()
     try{
-        person = await Person.findById(req.params.user_id)
+        const objId = new ObjectId((!ObjectId.isValid(param)) ? "123456789012" : param);
+        person = await Person.findOne({$or: [
+            {_id: objId},
+            {name: param}
+        ]})
+
         if(person == null){
             return res.status(404).json({
                 message: 'Cannot find person'
