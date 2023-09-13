@@ -80,7 +80,7 @@ GET /api/123
 To update a person's details, send a PUT request with the `user_id` parameter and a JSON body containing the updated data:
 
 ```json
-PUT /api/123
+PATCH /api/123
 Content-Type: application/json
 
 {
