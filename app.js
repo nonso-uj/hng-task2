@@ -24,6 +24,14 @@ app.listen(3000, () => console.log('Server Started'))
 
 
 
+app.get('/ping', async (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: "pong",
+    })
+})
+
+
 app.get('/', async (req, res) => {
     try{
         const persons = await Person.find()
